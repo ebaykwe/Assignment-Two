@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Signup.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap" rel="stylesheet">
+    <title>Signup Form</title>
+  </head>
+  <body>
+    <div class="text-container">
+      <img src="/assets/Logo.png" alt="Logo" />
+      <h1>For Individuals</h1>
+      <div class="text-one">
+        <p>
+          Start benefiting from the wellness experience. For companies looking on
+          increasing productivity, and improving organization wellness.
+        </p>
+      </div>
+      <div class="text-two">
+        <p>
+          Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <form action="#">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="firstName">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="Enter First Name"
+            />
+          </div>
+
+          <div class="user-input-box">
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Enter Last Name"
+            />
+          </div>
+
+          <div class="user-input-box">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" >
+              <option value="" disabled selected> Select here</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="user-input-box">
+            <label for="dob">Date of Birth</label>
+            <input type="text" id="dob" name="dob" placeholder="Select here" />
+          </div>
+
+          <div class="user-input-box">
+            <label for="weight">Weight (KG)</label>
+            <input
+              type="number"
+              id="weight"
+              name="weight"
+              placeholder="Enter weight here"
+            />
+          </div>
+
+          <div class="user-input-box">
+            <label for="height">Height (CM)</label>
+            <input
+              type="number"
+              id="height"
+              name="height"
+              placeholder="Enter height here"
+            />
+          </div>
+        </div>
+
+        <div class="user-input-box">
+          <label for="activityLevel">Activity Level</label>
+          <select id="activityLevel" name="activityLevel">
+            <option value="" disabled selected> Select here</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+
+        <div class="password">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password" required/>
+            <img src="https://img.icons8.com/?size=24&id=96181&format=png"  class="togglePassword" id="togglePassword">
+        </div>
+
+        <div class="submit-btn">
+          <input type="submit" value="Register" />
+        </div>
+        <p class="terms">
+          By clicking Register, you agree to our
+          <strong>Terms of Use</strong> and our <strong>Privacy Policy</strong>
+        </p>
+      </form>
+      <script src="Signup.js"></script>
+    </div>
+  </body>
+</html>

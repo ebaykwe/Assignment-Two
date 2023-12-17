@@ -1,0 +1,605 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato";
+}
+
+body {
+  background-color: rgba(46, 194, 179, 0.04);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+strong {
+  color: hsla(174, 62%, 47%, 1);
+  font-family: "Lato";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  text-decoration-line: underline;
+}
+
+.container {
+  /* width: 100%;
+    max-width: 600px; */
+  width: 580px;
+  height: 679px;
+  background: hsla(0, 0%, 100%, 1);
+  border-radius: 6px;
+  box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+  margin-top: 80px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 80px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+
+.main-user-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.user-input-box:nth-child(2n) {
+  justify-content: end;
+}
+
+.user-input-box {
+  font-family: "Lato";
+  font-size: 14px;
+  width: 42%;
+  padding-bottom: 30px;
+}
+.user-input-box label {
+  width: 48px;
+  height: 50px;
+  color: #011c34;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+}
+
+.user-input-box input {
+  height: 48px;
+  width: 207px;
+  padding: 16px;
+  border-radius: 2px;
+  border: 1px solid var(--cl-gray-3, #f0f0f0);
+  margin-top: 10px;
+}
+
+.user-input-box #gender {
+  height: 48px;
+  width: 207px;
+  padding: 16px;
+  border-radius: 2px;
+  border: 1px solid var(--cl-gray-3, #f0f0f0);
+  margin-top: 10px;
+}
+
+.user-input-box #activityLevel {
+  height: 48px;
+  width: 500px;
+  padding: 16px;
+  border-radius: 2px;
+  border: 1px solid var(--cl-gray-3, #f0f0f0);
+  margin-top: 10px;
+}
+
+.password {
+  display: inline-block;
+  position: relative;
+}
+.password input {
+  height: 48px;
+  width: 500px;
+  border-radius: 2px;
+  border: 1px solid var(--cl-gray-3, #f0f0f0);
+  margin-top: 10px;
+}
+.password img {
+  display: flex;
+  margin-left: 460px;
+  margin-block-start: -35px;
+  height: 20px;
+  width: 20px;
+}
+.password {
+  position: absolute;
+  width: 14px;
+  color: #011c34;
+  font-family: "Lato";
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.submit-btn input {
+  display: block;
+  width: 500px;
+  height: 48px;
+  text-align: center;
+  font-family: "Lato";
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  border: none;
+  margin-top: 100px;
+  color: hsla(0, 0%, 100%, 1);
+  background: hsla(174, 62%, 47%, 1);
+  box-shadow: (0px 10px 40px rgba(0, 0, 0, 0.1));
+}
+
+.terms {
+  color: #000;
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px; /* 178.571% */
+  text-align: center;
+  padding: 16px;
+}
+
+.text-container img {
+  width: 77.333px;
+  height: 80px;
+  margin-left: 130px;
+}
+.text-container h1 {
+  font-size: 40px;
+  height: 50px;
+  margin-left: 140px;
+  padding-top: 50px;
+}
+
+.text-container p {
+  color:  #737373;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px; /* 156.25% */
+  margin-left: 140px;
+  margin-right: px;
+  padding-top: 70px;
+}
+
+.text-two{
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 480px;
+    height: 570;
+    background: hsla(0, 0%, 100%, 1);
+    border-radius: 6px;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+    margin-top: 60px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 60px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+  }
+
+  .user-input-box {
+    font-size: 14px;
+    width: 45%;
+    padding-bottom: 20px;
+  }
+  .user-input-box input {
+    height: 48px;
+    width: 180px;
+  }
+
+  .user-input-box #gender {
+    height: 48px;
+    width: 180px;
+  }
+
+  .user-input-box #activityLevel {
+    height: 48px;
+    width: 400px;
+  }
+
+  .password input {
+    height: 48px;
+    width: 400px;
+  }
+  .password img {
+    display: flex;
+    margin-left: 370px;
+    margin-block-start: -33px;
+    height: 18px;
+    width: 18px;
+  }
+
+  .submit-btn input {
+    display: block;
+    width: 400px;
+    height: 48px;
+  }
+
+  .text-container img {
+    width: 65px;
+    height: 70px;
+    margin-left: 70px;
+  }
+  .text-container h1 {
+    font-size: 40px;
+    height: 50px;
+    margin-left: 80px;
+    padding-top: 40px;
+  }
+
+  .text-container p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-left: 80px;
+    padding-top: 110px;
+  }
+}
+
+@media (max-width: 790px) {
+  .container {
+    width: 380px;
+    height: 970px;
+    background: hsla(0, 0%, 100%, 1);
+    border-radius: 6px;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+
+  .user-input-box {
+    font-size: 16px;
+    width: 60%;
+    padding-bottom: 20px;
+    margin-left: 4px;
+  }
+  .user-input-box input {
+    height: 48px;
+    width: 300px;
+  }
+
+  .user-input-box #gender {
+    height: 48px;
+    width: 300px;
+  }
+
+  .user-input-box #activityLevel {
+    height: 48px;
+    width: 300px;
+  }
+
+  .password {
+    margin-left: 4px;
+    font-size: 18px;
+  }
+
+  .password input {
+    height: 48px;
+    width: 300px;
+  }
+  .password img {
+    display: flex;
+    margin-left: 270px;
+    margin-block-start: -33px;
+    height: 14px;
+    width: 14px;
+  }
+
+  .submit-btn input {
+    display: block;
+    width: 300px;
+    height: 48px;
+    margin-left: 4px;
+  }
+
+  .text-container img {
+    width: 65px;
+    height: 70px;
+    margin-left: 50px;
+  }
+  .text-container h1 {
+    font-size: 40px;
+    height: 50px;
+    margin-left: 60px;
+    padding-top: 40px;
+  }
+
+  .text-container p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-left: 60px;
+    padding-top: 110px;
+  }
+}
+
+@media (max-width: 690px) {
+  body {
+    margin: 0;
+  }
+  .container {
+    width: 400px;
+    height: 1000px; /* Make the container full width */
+    margin-left: 60px; /* Adjust margin for smaller screens */
+    margin-top: 300px;
+  }
+  .text-container {
+    position: absolute;
+    margin-left: -90px; /* Remove the left margin */ /* Center-align the text */
+    margin-top: -1050px;
+  }
+  .text-container p {
+    margin-top: -50px;
+    font-size: 14px;
+    width: 300px;
+    margin-left: -5px;
+  }
+
+  .text-container h1 {
+    margin-top: -20px;
+    margin-left: -5px;
+  }
+  .text-container img {
+    margin-left: -10px;
+  }
+
+  .text-one{
+    display: none;
+  }
+
+  .text-two{
+    display: block;
+  }
+
+  .main-user-info {
+    flex-direction: column; 
+  }
+
+  .user-input-box {
+    margin-left: 10px;
+  }
+
+  .user-input-box input {
+    width: 320px; 
+  }
+
+  .password img {
+    margin-left: 250px; 
+    margin-top: -30px; 
+  }
+
+  .password {
+    margin-top: 10px; 
+  }
+
+  .password input {
+    height: 48px;
+    width: 320px;
+  }
+
+  .submit-btn input {
+    width: 320px;
+    margin-top: 120px; /* Adjust the spacing */
+  }
+
+  .user-input-box #gender {
+    height: 48px;
+    width: 320px;
+  }
+
+  .user-input-box #activityLevel {
+    height: 48px;
+    width: 320px;
+  }
+
+  .terms {
+    color: #000;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px; /* 178.571% */
+    text-align: center;
+    margin-left: -5px;
+    width: 330px;
+  }
+}
+
+@media (max-width: 479px) {
+  .text-container {
+    position: absolute;
+    margin-left: 0px; /* Remove the left margin */ /* Center-align the text */
+    margin-top: -900px;
+  }
+  .text-container p {
+    margin-top: -50px;
+    font-size: 14px;
+    width: 327px;
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+
+  .text-container h1 {
+    width: 327px;
+    height: 30px;
+    margin-top: -20px;
+    margin-left: 28px;
+    font-size: 30px;
+  }
+  .text-container img {
+    margin-left: 24px;
+    width: 38.667px;
+    height: 40px;
+  }
+
+  .container {
+    width: 327px;
+    height: 870px;
+    margin-left: 60px;
+    margin-top: 300px;
+    max-width: fit-content;
+  }
+
+  .user-input-box {
+    margin-left: -16px;
+    padding-bottom: 18px;
+    margin-top: -5px;
+    font-size: 14px;
+  }
+
+  .user-input-box input {
+    width: 295px;
+    height: 48px;
+  }
+
+  .user-input-box #gender {
+    width: 295px;
+    height: 48px;
+  }
+
+  .user-input-box #activityLevel {
+    width: 295px;
+    height: 48px;
+  }
+
+  .password img {
+    margin-left: 270px;
+    margin-top: -30px;
+  }
+
+  .password {
+    margin-top: -10px;
+    font-size: 14px;
+    margin-left: -15px;
+  }
+
+  .password input {
+    width: 295px;
+    height: 48px;
+  }
+
+  .submit-btn input {
+    width: 295px;
+    height: 48px;
+    margin-left: -15px;
+    margin-top: 100px; /* Adjust the spacing */
+  }
+  .terms {
+    color: #000;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px; /* 178.571% */
+    text-align: center;
+    margin-left: -35px;
+    width: 330px;
+    margin-top: -12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .text-container {
+    position: absolute;
+    margin-left: 20px; 
+    margin-top: -900px;
+  }
+  .text-container p {
+    margin-top: -50px;
+    font-size: 14px;
+    width: 300px;
+  }
+
+  .text-container h1 {
+    width: 300px;
+    height: 30px;
+    margin-top: -20px;
+    font-size: 30px;
+  }
+  .text-container img {
+    margin-left: 24px;
+    width: 38.667px;
+    height: 40px;
+  }
+
+  .container {
+    width: 300px;
+    height: 840px;
+    margin-left: 60px;
+    margin-top: 250px;
+    
+  }
+
+  .user-input-box {
+    margin-left: -16px;
+    padding-bottom: 18px;
+    margin-top: -5px;
+    font-size: 12px;
+  }
+
+  .user-input-box input {
+    width: 270px;
+    height: 48px;
+  }
+
+  .user-input-box #gender {
+    width: 270px;
+    height: 48px;
+  }
+
+  .user-input-box #activityLevel {
+    width: 270px;
+    height: 48px;
+  }
+
+  .password img {
+    margin-left: 240px;
+    margin-top: -30px;
+  }
+
+  .password {
+    margin-top: -10px;
+    font-size: 14px;
+    margin-left: -15px;
+  }
+
+  .password input {
+    width: 270px;
+    height: 48px;
+  }
+
+  .submit-btn input {
+    width: 270px;
+    height: 48px;
+    margin-left: -15px;
+    margin-top: 100px; 
+  }
+  .terms {
+    color: #000;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 4px; 
+    text-align: center;
+    margin-left: -30px;
+    width: 300px;
+    margin-top: 60px;
+  }
+}
