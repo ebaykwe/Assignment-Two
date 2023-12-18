@@ -84,6 +84,10 @@ strong {
   margin-top: 10px;
 }
 
+.user-input-box select option:disabled[selected]{
+  color: #f0f0f0;
+}
+
 .user-input-box #activityLevel {
   height: 48px;
   width: 500px;

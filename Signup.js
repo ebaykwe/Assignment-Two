@@ -29,15 +29,4 @@ const togglePassword =
 
 
 
-// var a;
-// function pass(){
-//     if(a==1){
-//         document.getElementById('password').type='password';
-//         document.getElementById('pass-icon').src='pass-off.png';
-//         a=0;
-//     }else{
-//         document.getElementById('password').type='password';
-//         document.getElementById('pass-icon').src='pass-on.png';
-//         a=1;
-//     }
-// }
+
